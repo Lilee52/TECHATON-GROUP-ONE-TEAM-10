@@ -1,5 +1,641 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: #002d62;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif!important;
+    font-size: 16px;
+    color: #353535;
+    letter-spacing: 0.1px;
+}
+
+a {
+    color: #353535;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+.heading {
+    margin-bottom: 1em;
+    font-family: 'Krona One', sans-serif;
+}
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+    background-color: #f8f8f8;
+}
+
+.brand {
+    width: 100%;
+    margin: 2em auto 2em auto;
+} 
+
+.company-brand {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.brand-img {
+    width: 100%;
+}
+
+.img-1 {
+    max-width: 80%;
+}
+
+.img-3 {
+    margin-left: -0.4em;
+}
+
+.logo-footer { 
+    max-width: 70%;
+    margin: 1em 0.5em 0em 0.5em;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.headings {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0em 0em 2em 0em;
+    
+}
+
+.footer-link a {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    margin-bottom: 1.2em;
+}
+
+.footer-container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     gap: 4.7em;  
+    justify-content: space-around;
+    padding: 0em 1.5em;
+}
+
+.footer-link {
+    flex: 20%;
+    font-size: 14px;
+    font-weight: 500;
+    width: 30%;
+}
+
+.contact {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.address {
+    width: 150px;
+}
+
+ .last {
+    max-height: 24vh;
+    margin-top: -3em;
+} 
+
+.two {
+    margin-bottom: 30px;
+}
+.social a{
+    margin-top: 20px;
+}
+
+.social {
+    margin-left: 0em;
+}
+
+.fa-square-twitter,
+.fa-square-instagram {
+    margin-left: 0.3em;
+}
+
+.info {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin: 4em auto;
+    line-height: 20px;
+}
+
+.l-link p{
+    color: rgb(14, 14, 122);
+    height: 10vh;
+    margin: 0 auto 2em auto;
+    text-align-last: center;
+    white-space: wrap;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-container {
+    max-width: 100%;
+}
+
+.icons-social {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+
+
+
+@media (min-width: 240px) {
+    .brand {
+        max-width: 70%;
+    }
+
+    .info {
+        min-width: 160px;
+    }
+
+    .logo-footer {
+        max-width: 60%;
+    }
+    
+
+    
+
+}
+@media (min-width: 340px) {
+    .info {
+        min-width: 276px;
+    }
+
+    .l-link p {
+        min-width: 200px;
+    }
+
+    .logo-footer {
+        max-width: 200px;
+    }
+
+    .social {
+
+        width: 100%
+    }
+}
+
+@media (min-width: 444px) {
+    .brand {
+       width: 180px;
+       margin: 1.5em auto 1em auto;
+    }
+
+    .company-brand {
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 2em;
+    }
+
+    .logo-footer {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 580px) {
+    .footer-container {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+         gap: 8em;  
+        justify-content: space-around;
+        padding: 0em 1.5em;
+    }
+}
+
+@media (min-width: 650px) {
+    .brand {
+        min-width: 120px;
+    }
+
+    .company-brand {
+        max-width: 550px;
+        flex-wrap: nowrap;
+        gap: 2em;
+    }
+
+    
+
+    .social {
+        margin-top: 6em;
+    }
+
+}
+
+@media (min-width: 728px) {
+    .last {
+        margin-top: 0em;
+    }
+
+    .social {
+        margin-top: -8em;
+    }
+
+    .info-container {
+        margin-top: -7em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .brands-container {
+        display: flex;
+    }
+
+    .brands {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -1em;
+        margin-right: 5em;
+        font-size: 26px;
+        white-space: nowrap;
+    }
+
+    .larger-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-link {
+        max-width: 100px;
+        margin-top: 8em;
+    }
+
+    .footer-container {
+        padding: 0em;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 3em;
+        width: 70%;
+    } 
+
+    .last {
+        margin-top: 8em;
+    }
+
+    .social {
+        margin-top: 4.3em;
+        width: auto;
+    }
+
+
+    .info-container {
+        margin-left: -18em;
+        margin-top: -2em;
+    }
+
+    .contact {
+        text-align: right;
+    }
+
+    .address {
+        width: 230px;
+        margin-left: 3.5em;
+        text-align: right;
+    }
+
+    .tel {
+        margin-left: 9em;
+    }
+
+    .icons-social {
+        margin-left: 10em;
+        width: 117px;
+    }
+}
+nav{
+    background-color:#fff;
+    width:100%;
+    padding: 20px 80px;
+    position: fixed;
+    z-index:1;
+}
+.left-side{
+    display:flex;
+    justify-content:space-between;
+    width:55%;
+}
+.left-side img{
+    width:170px;
+}
+.left-side ul{
+     display:flex;
+     margin-top:21px;
+}
+.left-side li{
+    list-style-type: none;
+    padding:0px 25px;
+}
+.left-side li a{
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:600;
+    color:#515050;
+}
+.navigation{
+    display:flex;
+    justify-content: space-between;
+}
+.right-side .Sign-In-btn{
+    background-color: #fff;
+    border:1px solid rgb(210, 208, 208);
+    padding:17px;
+    border-radius:10px;
+    width:90px;
+    font-size:1rem;
+    color:#000;
+    font-weight:600;
+    margin-right:5px;
+}
+.right-side .Sign-In-btn a{
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:600;
+    color:#000;
+}
+.right-side .Sign-In-btn:hover{
+    color:rgb(16, 16, 251);
+    border:1px solid rgb(16, 16, 251);
+    transition:all 0.5s ease-in-out;
+}
+.right-side .Sign-In-btn a:hover{
+    color:rgb(16, 16, 251);
+    transition:all 0.5s ease-in-out;
+}
+.right-side .Create-account{
+    background-color: rgb(53, 53, 53);
+    border-radius:10px;
+    width:200px;
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    padding:17px;
+    border:none;
+}
+.right-side .Create-account a{
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+}
+.right-side .Create-account:hover{
+    background-color: rgb(16, 16, 251);
+    transition:all 0.8s ease-in-out;
+}
+.special-bg{
+    position:relative;
+    background-color: rgb(249,249,249);
+    height:750px;
+    max-width:75%;
+    z-index:0;
+    left:820px;
+}
+.flex-house{
+    display:flex;
+    padding:100px 80px;
+    padding-top:100px;
+    max-width:77%;
+    height:800px;
+    margin-bottom:70px;
+}
+.the-texts h1{
+    font-size:63px;
+    margin-top:-35rem;
+    line-height:82.5px;
+    font-weight:600;
+}
+.the-texts p{
+    font-size:17px;
+    line-height:27.2px;
+    color:#515050;
+    max-width:500px;
+    margin-top:0.5rem;
+}
+.rectangle{
+    height:90vh;
+    position:relative;
+    left:60%;
+    top:15%;
+}
+.lady{
+    height:80vh;
+    position:absolute;
+    top:221px;
+    right:210px;
+}
+.rent{
+    position:absolute;
+    width:210px;
+    height:120px;
+    bottom:170px;
+    right:470px;
+}
+.investify{
+    position:absolute;
+    width:210px;
+    height:120px;
+    bottom:-80px;
+    right:110px;
+}
+.cross-headerIcon{
+    position:absolute;
+    top:185px;
+    right:547px;
+}
+.circle-headerIcon{
+    position:absolute;
+    bottom:250px;
+    right:190px;
+}
+.dot-headerIcon{
+    position:absolute;
+    bottom:-10px;
+    right:570px;
+}
+.first-flex .Create-account{
+    background-color: rgb(53, 53, 53);
+    border-radius:10px;
+    width:200px;
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    padding:17px;
+    border:none;
+    margin-top:1.8rem
+}
+.first-flex .Create-account a{
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+}
+.first-flex .Create-account:hover{
+    background-color: rgb(16, 16, 251);
+    transition:all 0.8s ease-in-out;
+}
+.seconf-flex{
+    position:relative;
+}
+.download{
+    display:flex;
+    margin-top:35px;
+}
+.download button{
+    width:150px;
+    border-radius:12px;
+    padding:10px;
+    border:none;
+    border:1px solid rgb(210, 208, 208);
+    background-color: #fff;
+    transform:translateY(10px);
+}
+.download button:hover{
+    transform:translateY(0px);
+    transition:transform 0.5s ease-in-out;
+}
+.download a{
+    display:flex;
+    text-decoration: none;
+    color:rgb(17, 16, 16);
+    font-size:14px;
+    width:100%;
+}
+.download a p{
+    margin-top:5px;
+    padding-left:5px;
+}
+.ios{
+    margin-right:17px;
+}
+.me{
+    z-index:1;
+    max-width:100%;
+body {
+  background-color: #002d62;
+}
+
+.Sign-up-container {
+  background-color: white;
+  color: #00308f;
+  border-radius: 20px;
+  width: 400px;
+  font-family: sans-serif;
+  font-size: 400;
+  margin-left: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.message {
+  color: #6a6c6d;
+  padding-left: 10px;
+  padding-right: 100px;
+  margin-left: 65px;
+  padding: 0%;
+  font-size: 13px;
+  font-stretch: expanded;
+  text-align: justify;
+}
+
+.form1 {
+  color: black;
+  padding-left: 10px;
+  align-content: center;
+}
+
+.account1 {
+  color: white;
+  margin-left: 40%;
+  margin-top: 0%;
+  padding-top: 0%;
+}
+.account {
+  color: white;
+  padding-top: 100px;
+}
+
+.form1 {
+  align-items: center;
+  align-content: center;
+}
+
+.logo1 {
+  align-content: center;
+  width: 220px;
+  height: 40px;
+  margin-left: 545px;
+  margin-top: 2%;
+}
+
+.create1 {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 50px;
+  color: blue;
+}
+
+.input {
+  background-color: #e6edf5;
+  border: 0ch;
+  border-radius: 5px;
+  height: 50px;
+  margin-left: 20px;
+  padding-left: 40px;
+  width: 75%;
+}
+
+.input2 {
+  border: 0ch;
+  background-color: #e6edf5;
+  margin-left: 20px;
+  height: 45px;
+  border-radius: 6px;
+  width: 86%;
+}
+
+.create {
+  border: 0ch;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+  height: 45px;
+  width: 86%;
+}
+
+.details {
+  margin-left: 20px;
 }
